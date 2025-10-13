@@ -5,9 +5,9 @@ public class Example {
         try {
             System.out.println(a / b);
         }
-        catch (ArithmeticException ex) {
+        catch (Exception exception) {
             System.out.println("Атата, делить на ноль нехорошо!");
-            System.out.println(ex.getMessage());
+            System.out.println(exception.getMessage());
         }
         finally {
             System.out.println("Завершаю работу метода!");
